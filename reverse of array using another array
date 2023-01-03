@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int A[] = {1,2,3};
+    int size,i;
+    size = 3;
+    int B[size];
+    for(i = 0;i<size;i++)
+    {
+        B[size-1-i] = A[i];
+    }
+    //printf(B);
+    for(i=0;i<size;i++)
+    {
+        printf("%d\t",B[i]);
+    }
+
+    return 0;
+}
