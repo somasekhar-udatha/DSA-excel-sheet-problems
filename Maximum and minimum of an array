@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int A[] = {22, 14, 8, 17, 35, 3};
+    int size=6,i;
+    int min=A[0],max=A[0];
+    for(i=0;i<size;i++)
+    {
+        if(A[i]<min)
+            min = A[i];
+    }
+    for(i=0;i<size;i++)
+    {
+        if(A[i]>max)
+            max = A[i];
+    }
+    printf("max element : %d\n",max);
+    printf("min element : %d\n",min);
+    
+    return 0;
+}
